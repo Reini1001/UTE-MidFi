@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+}
+body {
+    background-color: hsl(220, 13%, 18%);
+    display: flex;
+    flex-direction: column;
+}
+
+header, footer {
+    background-color: hsl(216, 14%, 15%);
+    color: white;
+    font-family: 'Overpass', sans-serif;
+}
+
+a:visited {
+    color: white;
+}
+
+header {
+    padding: 5px 5px 0 5px;
+}
+
+#top-bar {
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    line-height: 20px;
+}
+#top-bar span a {
+    float: left;
+    text-decoration: none;
+}
+
+#top-bar-left a {
+    color: dimgray;
+    margin: 0 6px;
+}
+#top-bar-left a:hover {
+    color: white;
+}
+#top-bar-right a {
+    margin: 0 4px;
+}
+#top-bar-right img {
+    display: block;
+}
+#top-bar-right .icon img {
+    padding: 2px;
+}
+#user, #top-bar-right .notification {
+    background-color: hsl(215, 14%, 23%);
+}
+#user:hover, #top-bar-right .notification:hover {
+    background-color: hsl(215, 14%, 50%);
+}
+#user span, #user img {
+    float: left;
+}
+#user span {
+    padding: 0 5px;
+}
+#top-bar-right .notification {
+    padding: 0 8px;
+}
+
+nav {
+    font-size: 23px;
+    margin-top: 5px;
+}
+nav a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 2px 5px;
+}
+nav a.active, nav a:hover {
+    text-shadow: 0 0 5px white;
+}
+
+main {
+    margin-bottom: auto;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    bottom: 0;
+    font-size: 13px;
+    padding: 10px;
+}
+footer a {
+    display: flex;
+    margin: auto 0;
+    text-align: center;
+}
+footer a:hover span.hover {
+    text-shadow: 0 0 0.5em white;
+}
+
+#addGame span {
+        line-height: 20px;
+}
+#addGame img {
+    display: block;
+    margin: auto 5px auto 0;
+}
+
+#downloads {
+    flex-direction: column;
+}
+
+#chat img {
+    display: block;
+    margin: auto 0 auto 10px;
+}
+
+.dimgray {
+    color: dimgray;
+}
+.uppercase {
+    text-transform: uppercase;
+}
