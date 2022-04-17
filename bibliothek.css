@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300&display=swap');
+
+* {
+    color: white;
+    font-family: 'Overpass', sans-serif;
+
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+}
+
+main {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+aside {
+    width: 15%;
+}
+#game-list {
+    width: 100%;
+}
+#game-list li:hover {
+    background-color: hsl(221, 20%, 25%);
+}
+#game-list li.collection {
+    padding-left: 5px;
+    background-image: linear-gradient(90deg, hsl(221, 15%, 23%) 0%, hsl(221, 15%, 23%) 40%, hsl(220, 13%, 18%) 100%);
+}
+#game-list li.collection:hover {
+    background-image: linear-gradient(90deg, hsl(221, 20%, 45%) 0%, hsl(221, 20%, 45%) 40%, hsl(221, 15%, 23%) 100%);
+}
+#game-list li:not(.collection) {
+    padding-left: 30px;
+}
+#game-list li.active {
+    background-color: hsl(221, 20%, 35%);
+}
+#game-list li.active:hover {
+    background-color: hsl(221, 20%, 45%);
+}
+
+#game-info {
+    width: 85%;
+    background-color: hsl(216, 14%, 21%);
+}
