@@ -1,15 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300&display=swap');
 
-* {
-    color: white;
-    font-family: 'Overpass', sans-serif;
-
-    -webkit-user-select: none; /* Safari */
-    -moz-user-select: none; /* Firefox */
-    -ms-user-select: none; /* IE10+/Edge */
-    user-select: none; /* Standard */
-}
-
 main {
     height: 100%;
     display: flex;
@@ -19,6 +9,49 @@ main {
 aside {
     width: 15%;
 }
+
+#collections {
+    display: block;
+    justify-content: center;
+    background-color: hsl(218, 14%, 15%);
+    padding-left: 10px;
+}
+#collections span {
+    line-height: 30px;
+}
+#collections img {
+    float: right;
+    padding: 5px;
+}
+
+#optionen {
+    display: block;
+    padding: 5px;
+}
+#optionen span {
+    display: inline-block;
+    background: hsl(218, 14%, 15%);
+    padding: 3px;
+    border-radius: 3px;
+}
+#optionen > br {
+    margin-top: 5px;
+}
+#optionen > img {
+    float: right;
+    padding: 5px;
+}
+#optionen span:last-child {
+    display: block;
+    margin-top: 5px;
+}
+#optionen span:last-child img{
+    padding: 5px 5px 0;
+}
+#optionen span:last-child img:last-child{
+    float: right;
+}
+
 #game-list {
     width: 100%;
 }
