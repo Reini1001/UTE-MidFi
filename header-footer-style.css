@@ -3,6 +3,14 @@
 * {
     margin: 0;
     padding: 0;
+
+    color: white;
+    font-family: 'Overpass', sans-serif;
+
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
 }
 
 html, body {
@@ -18,10 +26,6 @@ header, footer {
     background-color: hsl(216, 14%, 15%);
     color: white;
     font-family: 'Overpass', sans-serif;
-}
-
-a:visited {
-    color: white;
 }
 
 header {
