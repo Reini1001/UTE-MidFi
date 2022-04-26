@@ -2,8 +2,9 @@
 <html lang="de">
 <head>
     <meta charset="UTF-8">
-    <title>Bibliothek</title>
+    <title>User: Freunde</title>
     <link href="header-footer-style.css" rel="stylesheet">
+    <link href="freunde.css" rel="stylesheet">
 </head>
 <body>
 <header>
@@ -38,7 +39,53 @@
     </nav>
 </header>
 <main>
+    <div id="friends-main">
+        <div id="friends-sidebar">
+            <div id="friends-status">
+                <p class="friends-header">STATUS</p>
+                <p>
+                    <input type="radio" checked="checked" name="status" id="online" value="online">
+                    <label for="online">online</label>
+                </p>
+                <p>
+                    <input type="radio" name="status" id="abwesend" value="abwesend">
+                    <label for="abwesend">abwesend</label>
+                </p>
+                <p>
+                    <input type="radio" name="status" id="unsichtbar" value="unsichtbar">
+                    <label for="unsichtbar">unsichtbar</label>
+                </p>
+                <p>
+                    <input type="radio" name="status" id="offline" value="offline">
+                    <label for="offline">offline</label>
+                </p>
+            </div>
+            <div id="friends-users">
+                <p class="friends-header">NUTZER</p>
+                <p><a href="#">Deine Freunde</a></p>
+                <p><a href="#">Freund Hinzufügen</a></p>
+                <p><a>Offene Einladungen</a></p>
+                <p><a>Zuletzt gespielt mit</a></p>
+                <p><a>Blockierte Nutzer</a></p>
+                <p><a>Gefolgte Nutzer</a></p>
+            </div>
+            <div id="friends-groups">
+                <p class="friends-header">GRUPPEN</p>
+                <p><a>Deine Gruppen</a></p>
+                <p><a>Offene Einladungen</a></p>
+                <p><a>Gruppe Beitreten</a></p>
+                <p><a>Grupper Erstellen</a></p>
+                <p><a>Gefolgte gruppen</a></p>
+            </div>
+            <div id="friends-profile">
+                <p><a onclick="" id="username-copy">User#1337</a></p>
+                <img src="icons/profilePic.svg" width="50%">
+            </div>
+        </div>
+        <div id="friends-content">
 
+         </div>
+    </div>
 </main>
 <footer>
     <a class="uppercase" id="addGame">

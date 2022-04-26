@@ -1,0 +1,63 @@
+main {
+    background: linear-gradient(42deg,
+            rgba(255,255,255,0),
+            rgba(255,255,255,0),
+            rgba(255,255,255,0.02),
+            rgba(255,255,255,0.01),
+            rgba(255,255,255,0),
+            rgba(255,255,255,0.01),
+            rgba(255,255,255,0),
+            rgba(255,255,255,0.01),
+            rgba(255,255,255,0),
+            rgba(255,255,255,0.01),
+            rgba(255,255,255,0.01),
+            rgba(255,255,255,0.01),
+            rgba(255,255,255,0),
+            rgba(255,255,255,0),
+            rgba(255,255,255,0),
+            rgba(255,255,255,0.01),
+            rgba(255,255,255,0),
+            rgba(255,255,255,0.01),
+            rgba(255,255,255,0),
+            rgba(255,255,255,0.01),
+            rgba(255,255,255,0),
+            rgba(255,255,255,0.02),
+            rgba(255,255,255,0.01),
+            rgba(255,255,255,0)
+        ),
+        radial-gradient(#1d5267, #18445d, #1a2737);
+
+    height: 100%;
+    width: 100%;
+}
+
+#friends-main {
+    display: grid;
+    grid-template-columns: 1fr 4.5fr;
+    grid-template-rows: 1fr;
+    column-gap: 0.3em;
+
+    width: 90vw;
+    height: 80vh;
+    max-height: 90%;
+    margin: 2.5% 5% 0;
+}
+
+#friends-main > div {
+    background-color: rgba(33,37,44,0.4);
+}
+
+#friends-sidebar {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1.5fr 1.5fr 2fr;
+    padding: 0.3em;
+}
+
+#friends-sidebar > div:nth-child(n+2) {
+    border-top: solid black 1px;
+}
+
+#friends-content {
+    overflow: auto;
+}
