@@ -1,0 +1,65 @@
+#friends-content > p {
+    font-size: 2em;
+    padding-left: 0.4em;
+    padding-top: 0.1em;
+    margin: 0.2em;
+    background-color: rgba(1, 94, 128, 0.9);
+}
+
+.friends-friends {
+    font-size: 1.5em;
+    margin: 0.3em;
+}
+
+.friends-friends > p {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    border-bottom: solid white 1px;
+}
+
+.friends-friends-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(12em, 1fr));
+    column-gap: 0.8em;
+    row-gap: 0.8em;
+
+    width: 100%;
+    height: fit-content;
+    margin-top: 0.5em;
+}
+
+.friend-container {
+    display: grid;
+    grid-template-columns: 2em 1fr;
+    padding: 0.1em;
+    background-color: #21252c;
+}
+
+.friend-container > img {
+    height: 2em;
+}
+
+.friend-text {
+    padding-left: 0.3em;
+    padding-top: 0.2em;
+}
+
+.friend-text > p:first-child {
+    font-size: 0.8em;
+}
+
+.friend-text > p:last-child {
+    font-size: 0.5em;
+}
+
+#friends-ingame > .friends-friends-grid > .friend-container > .friend-text > p {
+    color: #8ed629;
+}
+
+#friends-online > .friends-friends-grid > .friend-container > .friend-text > p {
+    color: #57cbde;
+}
+
+#friends-offline > .friends-friends-grid > .friend-container > .friend-text > p {
+    color: #898989;
+}
