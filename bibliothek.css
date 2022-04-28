@@ -74,8 +74,3 @@ aside {
 #game-list li.active:hover {
     background-color: hsl(221, 20%, 45%);
 }
-
-#game-info {
-    width: 85%;
-    background-color: hsl(216, 14%, 21%);
-}

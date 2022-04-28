@@ -1,0 +1,117 @@
+#game {
+    display: flex;
+    width: 85%;
+    flex-direction: column;
+    background: radial-gradient(hsl(196, 56%, 21%), hsl(213, 35%, 16%) 80%);
+
+}
+
+#game-img {
+    display: flex;
+    height: 42%;
+}
+#game-img h1 {
+    margin: auto;
+}
+
+#game-bar {
+    display: flex;
+    height: 8%;
+    background: hsla(0, 0%, 0%, 30%);
+}
+#game-bar span {
+    display: inline-block;
+    float: left;
+    text-align: left;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+#game-start, #game-start-v {
+    background: hsl(95, 74%, 48%);
+    font-size: 26px;
+    text-align: center;
+    padding: 5px;
+}
+#game-start {
+    width: 150px;
+    margin-left: 20px;
+    border-radius: 5px 0 0 5px;
+}
+#game-start-v {
+    margin-left: 5px;
+    border-radius: 0 5px 5px 0;
+}
+
+#last-played, #play-time, #achievements {
+    margin-left: 20px;
+}
+
+#game-info {
+    height: 50%;
+    background: hsla(0, 0%, 0%, 20%);
+    padding: 15px;
+    display: grid;
+    grid-auto-columns: 7fr 3fr;
+    grid-auto-rows: min-content auto;
+    grid-template-areas: "bar bar" "activity friends";
+}
+
+#game-info-bar {
+    grid-area: bar;
+    background: hsl(207, 21%, 25%);
+    padding: 5px;
+}
+#game-info-bar a {
+    padding: 5px;
+    font-size: 18px;
+}
+#game-info-bar a:hover {
+    text-shadow: 0 0 0.2em white;
+}
+#game-info-bar a:not(:first-child) {
+    margin-left: 50px;
+}
+
+#game-friends {
+    grid-area: friends;
+    padding: 10px;
+}
+#game-friends .head-line {
+    margin: 5px 0;
+}
+#game-friends .friends-big {
+    font-size: 14px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 5px;
+}
+#game-friends .friends-small {
+    padding: 2px;
+}
+
+#game-activity {
+    grid-area: activity;
+}
+#game-activity .head-line {
+    margin: 10px 0 5px;
+    font-size: 23px;
+}
+#game-activity input {
+    width: 90%;
+    font-size: 18px;
+    padding: 2px;
+    background: hsla(0, 0%, 0%, 20%);
+    border: 0;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+#game-activity .activity {
+    margin-bottom: 10px;
+}
+#game-activity .activity h2 {
+    font-size: 20px;
+}
+#game-activity .activity p {
+    width: 80%;
+}
