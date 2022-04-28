@@ -6,6 +6,7 @@
 
     color: white;
     font-family: 'Overpass', sans-serif;
+    text-decoration: none;
 
     -webkit-user-select: none; /* Safari */
     -moz-user-select: none; /* Firefox */
