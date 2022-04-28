@@ -1,0 +1,57 @@
+.friends-helptext {
+    font-size: 1em;
+    padding-left: 0.8em;
+    margin-bottom: 0.4em;
+}
+
+#friends-friendlink-container, #friends-friendcode-container {
+    padding-left: 0.4em;
+    padding-right: 0.4em;
+    margin-top: 1em;
+}
+
+#friends-friendlink {
+    display: grid;
+    grid-template-columns: 1fr 8em;
+    border-bottom: solid white 1px;
+    padding-bottom: 1em;
+}
+
+#friends-friendlink > p {
+    background-color: #1a2737;
+    padding: 0.4em;
+    font-size: 0.8em;
+    color: #898989;
+    user-select: text;
+}
+
+#friends-friendlink > p:hover {
+    background-color: #1c2939;
+    color: white;
+}
+
+#friends-friendlink-copybutton {
+    background-color: rgba(1, 94, 128);
+    border: 0;
+    font-size: 1em;
+}
+
+#friends-friendlink-copybutton:hover {
+    background-color: rgba(9, 102, 136);
+}
+
+#friends-friendlink-copybutton:active {
+    background-color: rgba(17, 110, 144);
+}
+
+#friends-friendcode {
+    width: calc(100% - 0.4em);
+    padding: 0.2em;
+    font-size: 1.5em;
+    background-color: #1a2737;
+    border: 0;
+}
+
+#friends-friendcode:focus {
+    background-color: #1c2939;
+}

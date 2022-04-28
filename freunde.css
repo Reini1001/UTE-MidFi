@@ -65,6 +65,14 @@ main {
     overflow: auto;
 }
 
+#friends-content > p {
+    font-size: 2em;
+    padding-left: 0.4em;
+    padding-top: 0.1em;
+    margin: 0.2em;
+    background-color: rgba(1, 94, 128, 0.9);
+}
+
 .friends-header {
     font-size: 1.2em;
     margin-left: 0.2em;
@@ -95,4 +103,6 @@ main {
 #friends-profile > img {
     display: block;
     margin: 1em auto auto;
+    background-color: #21252c;
+    border-radius: 25%;
 }
