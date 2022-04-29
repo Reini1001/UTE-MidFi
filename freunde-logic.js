@@ -23,12 +23,15 @@ function searchFriend() {
 let isRequestPending = false
 function toggleAddFriend() {
     let button = document.getElementById("addFriendButton");
+    let invitesField = document.getElementById("open-invites");
     isRequestPending = !isRequestPending;
     if (isRequestPending) {
         button.classList.add("toggled")
         button.innerText = "Anfrage Zurückziehen";
+        invitesField.setAttribute("invites", "1");
         return;
     }
     button.classList.remove("toggled");
     button.innerText = "Anfrage Senden";
+    invitesField.setAttribute("invites", "");
 }
