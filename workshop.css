@@ -1,0 +1,77 @@
+main {
+    height: 100%;
+    padding: 2rem 25% 0;
+    background: hsl(213, 35%, 16%);
+    display: grid;
+    grid-template-columns: 7fr 3fr;
+    grid-template-rows: 5fr 0.6fr 13fr;
+    grid-template-areas: "game game" "tags menu" "ws-list menu";
+    grid-gap: 1rem;
+}
+
+#game {
+    grid-area: game;
+    padding: 0.5rem;
+    border: 2px solid white;
+    border-radius: 1rem;
+}
+#game div.last-played {
+    float: right;
+    height: 50%;
+    aspect-ratio: 4/3;
+    margin: 0.5rem;
+    text-align: center;
+    padding: 0.2rem;
+    background: darkblue;
+}
+
+#tags {
+    grid-area: tags;
+}
+#tags span {
+    background: darkolivegreen;
+    padding: 0.1rem 0.5rem;
+}
+
+#menu {
+    grid-area: menu;
+    background: transparent;
+    padding: 0.5rem;
+}
+#menu > a {
+    display: block;
+    width: 100%;
+    font-size: 1.2rem;
+    padding: 0 0.3rem;
+}
+#menu a.spacing-bottom {
+    margin-bottom: 0.6rem;
+}
+#menu a.active {
+    background: darkslateblue;
+}
+#menu hr {
+    border: 0;
+    border-bottom: 0.15rem dotted white;
+    margin: 1rem 0;
+}
+
+#ws-list {
+    grid-area: ws-list;
+}
+#ws-list div.ws-item {
+    display: flex;
+    width: 100%;
+    aspect-ratio: 4/1;
+    margin-bottom: 0.5rem;
+    background: darkslateblue;
+    border-radius: 0.5rem;
+}
+#ws-list div.ws-item h3 {
+    width: 25%;
+    padding: 0.5rem;
+}
+#ws-list div.ws-item div {
+    width: 75%;
+    padding: 0.5rem;
+}
