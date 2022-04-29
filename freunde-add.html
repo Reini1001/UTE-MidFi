@@ -7,6 +7,7 @@
     <link href="freunde.css" rel="stylesheet">
     <link href="custom-radio.css" rel="stylesheet">
     <link href="neuer-freund.css" rel="stylesheet">
+    <script src="freunde-logic.js"></script>
 </head>
 <body>
 <header>
@@ -95,7 +96,21 @@
                 </div>
                 <div id="friends-friendcode-container">
                     <p class="friends-helptext">Geben Sie den Namen und Code des Nutzers ein</p>
-                    <input type="text" id="friends-friendcode" placeholder="BeispielName#1234">
+                    <div id="inputcountainer">
+                        <input type="text" id="friends-friendcode" placeholder="BeispielName#1234" value="">
+                        <button id="search" onclick="searchFriend()">Suchen</button>
+                    </div>
+                    <p id="infobox"></p>
+                    <div id="friends-found-friend" class="invisible">
+                        <div class="friend-found-container">
+                            <img src="icons/profilePic.svg">
+                            <div class="friend-found-text">
+                                <p>BeispielName</p>
+                                <p></p>
+                            </div>
+                            <button id="addFriendButton" onclick="toggleAddFriend()">Anfrage Senden</button>
+                        </div>
+                    </div>
                 </div>
          </div>
     </div>
