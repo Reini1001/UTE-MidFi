@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>User: Freunde</title>
+    <link href="header-footer-style.css" rel="stylesheet">
+    <link href="freunde.css" rel="stylesheet">
+    <link href="custom-radio.css" rel="stylesheet">
+    <link href="deine-freunde.css" rel="stylesheet">
+</head>
+<body>
+<header>
+    <div id="top-bar">
+        <!--Einstellungen-->
+        <span id="top-bar-left">
+            <a>Dampf</a>
+            <a>Ansicht</a>
+            <a href="#">Freunde</a>
+            <a>Spiele</a>
+            <a>Hilfe</a>
+        </span>
+        <!--Nutzer-->
+        <span id="top-bar-right">
+            <a class="icon notification"><img alt="" height="16" src="icons/announcement.svg" width="16"></a>
+            <a class="icon notification"><img alt="" height="16" src="icons/notifiction.svg" width="16"></a>
+            <a id="user"><img alt="" height="20" src="icons/profilePic.svg" width="20"><span>User</span><img src="icons/dropdown.svg" width="20" height="20" alt=""> </a>
+            <a class="icon"><img alt="" height="16" src="icons/-.svg" width="16"></a>
+            <a class="icon"><img alt="" height="16" src="icons/fullscreen.svg" width="16"></a>
+            <a class="icon"><img alt="" height="16" src="icons/x.svg" width="16"></a>
+        </span>
+    </div>
+    <!--Nav-->
+    <nav class="uppercase">
+        <a><-</a>
+        <a>-></a>
+        <a>Shop</a>
+        <a>Bibliothek</a>
+        <a>Markt</a>
+        <a href="#">Workshop</a>
+        <a class="active">User</a>
+    </nav>
+</header>
+<main>
+    <div id="friends-main">
+        <div id="friends-sidebar">
+            <div id="friends-status">
+                <p class="friends-header">STATUS</p>
+                <label class="radio-container">Online
+                    <input type="radio" checked="checked" name="status" id="online" value="online">
+                    <span class="custom-radio"></span>
+                </label>
+                <label class="radio-container">Abwesend
+                    <input type="radio" name="status" id="abwesend" value="abwesend">
+                    <span class="custom-radio"></span>
+                </label>
+                <label class="radio-container">Unsichtbar
+                    <input type="radio" name="status" id="unsichtbar" value="unsichtbar">
+                    <span class="custom-radio"></span>
+                </label>
+                <label class="radio-container">Offline
+                    <input type="radio" name="status" id="offline" value="offline">
+                    <span class="custom-radio"></span>
+                </label>
+            </div>
+            <div id="friends-users">
+                <p class="friends-header">NUTZER</p>
+                <p class="active"><a href="#">Deine Freunde</a></p>
+                <p><a href="freunde-add.html">Freund Hinzufügen</a></p>
+                <p><a>Offene Einladungen</a></p>
+                <p><a>Zuletzt gespielt mit</a></p>
+                <p><a>Blockierte Nutzer</a></p>
+                <p><a>Gefolgte Nutzer</a></p>
+            </div>
+            <div id="friends-groups">
+                <p class="friends-header">GRUPPEN</p>
+                <p><a>Deine Gruppen</a></p>
+                <p><a>Offene Einladungen</a></p>
+                <p><a>Gruppe Beitreten</a></p>
+                <p><a>Grupper Erstellen</a></p>
+                <p><a>Gefolgte gruppen</a></p>
+            </div>
+            <div id="friends-profile">
+                <p><a id="username-copy">User#1337</a></p>
+                <img src="icons/profilePic.svg" width="50%">
+            </div>
+        </div>
+        <div id="friends-content">
+            <p>Freunde</p>
+            <div class="friends-friends" id="friends-ingame">
+                <p>Im Spiel</p>
+                <div class="friends-friends-grid">
+                    <div class="friend-container">
+                        <img src="icons/profilePic.svg">
+                        <div class="friend-text">
+                            <p>HansPeter93</p>
+                            <p>Gegenschlag: Globale Offensive</p>
+                        </div>
+                    </div>
+                    <div class="friend-container">
+                        <img src="icons/profilePic.svg">
+                        <div class="friend-text">
+                            <p>JohnDoe37</p>
+                            <p>The Elder Scrolls V: Skyrim</p>
+                        </div>
+                    </div>
+                    <div class="friend-container">
+                        <img src="icons/profilePic.svg">
+                        <div class="friend-text">
+                            <p>ElGürkus</p>
+                            <p>From the Depths</p>
+                        </div>
+                    </div>
+                    <div class="friend-container">
+                        <img src="icons/profilePic.svg">
+                        <div class="friend-text">
+                            <p>Jenny</p>
+                            <p>Doom Eternal</p>
+                        </div>
+                    </div>
+                    <div class="friend-container">
+                        <img src="icons/profilePic.svg">
+                        <div class="friend-text">
+                            <p>Reini2002</p>
+                            <p>Arma 3</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="friends-friends" id="friends-online">
+                <p>Online</p>
+                <div class="friends-friends-grid">
+                    <div class="friend-container">
+                        <img src="icons/profilePic.svg">
+                        <div class="friend-text">
+                            <p>Mari</p>
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="friend-container">
+                        <img src="icons/profilePic.svg">
+                        <div class="friend-text">
+                            <p>Speedstar42</p>
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="friend-container">
+                        <img src="icons/profilePic.svg">
+                        <div class="friend-text">
+                            <p>X_De</p>
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="friend-container">
+                        <img src="icons/profilePic.svg">
+                        <div class="friend-text">
+                            <p>Alfred Bauer Gaming</p>
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="friend-container">
+                        <img src="icons/profilePic.svg">
+                        <div class="friend-text">
+                            <p>CR1T1K4L 3RR0R</p>
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="friend-container">
+                        <img src="icons/profilePic.svg">
+                        <div class="friend-text">
+                            <p>Der Nette Bube Von Nebenan</p>
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="friend-container">
+                        <img src="icons/profilePic.svg">
+                        <div class="friend-text">
+                            <p>Mettbrötchen #3</p>
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="friend-container">
+                        <img src="icons/profilePic.svg">
+                        <div class="friend-text">
+                            <p>Kraft</p>
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="friend-container">
+                        <img src="icons/profilePic.svg">
+                        <div class="friend-text">
+                            <p>iceater</p>
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="friends-friends" id="friends-offline">
+                <p>Offline</p>
+                <div class="friends-friends-grid">
+                    <div class="friend-container">
+                        <img src="icons/profilePic.svg">
+                        <div class="friend-text">
+                            <p>TimmyGamer2007</p>
+                            <p>Zuletzt Online vor 17 Minuten</p>
+                        </div>
+                    </div>
+                    <div class="friend-container">
+                        <img src="icons/profilePic.svg">
+                        <div class="friend-text">
+                            <p>K3v1998</p>
+                            <p>Zuletzt Online vor 4 Jahren</p>
+                        </div>
+                    </div>
+                    <div class="friend-container">
+                        <img src="icons/profilePic.svg">
+                        <div class="friend-text">
+                            <p>Monsterminds</p>
+                            <p>Zuletzt Online vor 3 Tagen</p>
+                        </div>
+                    </div>
+                    <div class="friend-container">
+                        <img src="icons/profilePic.svg">
+                        <div class="friend-text">
+                            <p>HansPeter94</p>
+                            <p>Zuletzt Online vor 6 Monaten</p>
+                        </div>
+                    </div>
+                    <div class="friend-container">
+                        <img src="icons/profilePic.svg">
+                        <div class="friend-text">
+                            <p>Datroll</p>
+                            <p>Zuletzt Online vor 2 wochen</p>
+                        </div>
+                    </div>
+                    <div class="friend-container">
+                        <img src="icons/profilePic.svg">
+                        <div class="friend-text">
+                            <p>Brennstoff3000</p>
+                            <p>Zuletzt Online vor 9 Stunden</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </div>
+    </div>
+</main>
+<footer>
+    <a class="uppercase" id="addGame">
+        <img alt="" height="20" src="icons/add.svg" width="20">
+        <span class="hover">Spiel hinzufügen</span>
+    </a>
+    <a id="downloads">
+        <span class="uppercase hover">Downloads</span>
+        <span class="dimgray">Verwalten</span>
+    </a>
+    <a class="uppercase" id="chat">
+        <span class="hover">Freunde <br>& Chat</span>
+        <img alt="" height="30" src="icons/chat.svg" width="30">
+    </a>
+</footer>
+</body>
+</html>

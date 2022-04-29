@@ -1,0 +1,120 @@
+.friends-helptext {
+    font-size: 1em;
+    padding-left: 0.8em;
+    margin-bottom: 0.4em;
+}
+
+#friends-friendlink-container, #friends-friendcode-container {
+    padding-left: 0.4em;
+    padding-right: 0.4em;
+    margin-top: 1em;
+}
+
+#friends-friendlink {
+    display: grid;
+    grid-template-columns: 1fr 8em;
+    border-bottom: solid white 1px;
+    padding-bottom: 1em;
+}
+
+#friends-friendlink > p {
+    background-color: #1a2737;
+    padding: 0.4em;
+    font-size: 0.8em;
+    color: #898989;
+    user-select: text;
+}
+
+#friends-friendlink > p:hover {
+    background-color: #1c2939;
+    color: white;
+}
+
+#friends-friendlink-copybutton, #addFriendButton, #search {
+    background-color: rgba(1, 94, 128);
+    border: 0;
+}
+
+#friends-friendlink-copybutton, #search {
+    font-size: 1em;
+}
+
+#addFriendButton {
+    font-size: 0.6em;
+}
+
+#friends-friendlink-copybutton:hover, #addFriendButton:hover, #search:hover {
+    background-color: rgba(9, 102, 136);
+}
+
+#friends-friendlink-copybutton:active, #addFriendButton:active, #search:active {
+    background-color: rgba(17, 110, 144);
+}
+
+
+
+#friends-friendcode {
+    width: calc(100% - 0.4em);
+    padding: 0.2em;
+    font-size: 1.5em;
+    background-color: #1a2737;
+    border: 0;
+}
+
+#friends-friendcode:focus {
+    background-color: #1c2939;
+}
+
+.friend-found-container {
+    display: grid;
+    grid-template-columns: 2em 1fr 6.5em;
+    background-color: #21252c;
+    margin: 1em;
+    font-size: 3em;
+    height: 2em;
+}
+
+.friend-found-container > img {
+    height: 1.8em;
+    margin: 0.1em;
+}
+
+.friend-found-text {
+    padding-left: 0.3em;
+    padding-top: 0.3em;
+}
+
+.friend-found-text > p:first-child {
+    font-size: 0.8em;
+    color: #57cbde;
+}
+
+.invisible {
+    opacity: 0;
+    user-select: none;
+    pointer-events: none;
+}
+
+#infobox {
+    padding-left: 1em;
+    margin-top: 0.5em;
+    font-size: 0.8em;
+    color: #898989;
+}
+
+#inputcountainer {
+    display: grid;
+    grid-template-columns: 1fr 6em;
+}
+
+#addFriendButton.toggled {
+    background-color: #191d24;
+}
+
+#addFriendButton:hover.toggled {
+    background-color: #171b22;
+}
+
+#addFriendButton:active.toggled {
+    background-color: #15191f;
+}
