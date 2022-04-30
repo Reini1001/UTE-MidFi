@@ -2,11 +2,11 @@ function searchFriend() {
     let inputField = document.getElementById("friends-friendcode").value;
     let outputField = document.getElementById("infobox");
     let friend = document.getElementById("friends-found-friend");
-    
+
     if (
         inputField.length < 6 ||                                                                                        // Muss mindestens 6 lang sein
         inputField.charAt((inputField.length -5)) !== "#" ||                                                            // Das 5.-letzte Zeichen muss # sein
-        typeof Number.parseInt(inputField.substring((inputField.length -4))) !== "number"                               // Die letzten 4 Zeichen müssen Nummern sein
+        isNaN(inputField.substring(inputField.length -4, inputField.length))                                            // Die letzten 4 Zeichen müssen Nummern sein
     ) {
         outputField.innerText = "Bitte geben Sie den Namen und die Zahlen vom Nutzer im Format 'Name#XXXX' an."
         friend.classList.add("invisible");
