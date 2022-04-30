@@ -4,9 +4,10 @@ main {
     background: hsl(213, 35%, 16%);
     display: grid;
     grid-template-columns: 7fr 3fr;
-    grid-template-rows: 5fr 0.6fr 13fr;
+    grid-template-rows: 8rem 0.6fr 13fr;
     grid-template-areas: "game game" "tags menu" "ws-list menu";
     grid-gap: 1rem;
+    overflow-y: scroll;
 }
 
 #game {
@@ -42,7 +43,7 @@ main {
     display: block;
     width: 100%;
     font-size: 1.2rem;
-    padding: 0 0.3rem;
+    padding: 0.1rem 0.3rem;
 }
 #menu a.spacing-bottom {
     margin-bottom: 0.6rem;

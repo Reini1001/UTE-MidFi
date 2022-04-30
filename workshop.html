@@ -7,7 +7,7 @@
     <link href="workshop.css" rel="stylesheet">
     <script src="workshop.js"></script>
 </head>
-<body>
+<body onload="game_load()">
 <header>
     <div id="top-bar">
         <!--Einstellungen-->
@@ -41,36 +41,26 @@
 </header>
 <main>
     <div id="game">
-        <h2>Kein Spiel ausgewählt</h2>
-        <div class="last-played">Spiel 3</div>
-        <div class="last-played">Spiel 2</div>
-        <div class="last-played">Spiel 1</div>
+
     </div>
     <div id="tags">
         <span>Tag1 <img alt="" width="10" src="icons/x.svg" height="10"></span>
     </div>
     <div id="ws-list">
-        <div class="ws-item">
-            <h3>Inhalt 1</h3>
-            <div>Beschreibung</div>
-        </div>
-        <div class="ws-item">
-            <h3>Inhalt 2</h3>
-            <div>Beschreibung</div>
-        </div>
+
     </div>
     <div id="menu">
-        <a class="menu-item">Offizielle Inhalte</a>
-        <a class="menu-item spacing-bottom">Ihre Liste</a>
+        <a class="menu-item" onclick="menu(this)">Offizielle Inhalte</a>
+        <a class="menu-item spacing-bottom" onclick="menu(this)">Ihre Liste</a>
 
-        <a class="menu-item">Ihre Favoriten</a>
-        <a class="menu-item">Favoriten ihrer Freunde</a>
-        <a class="menu-item">Objekte von Freunden</a>
-        <a class="menu-item spacing-bottom">Autoren, denen Sie folgen</a>
+        <a class="menu-item" onclick="menu(this)">Ihre Favoriten</a>
+        <a class="menu-item" onclick="menu(this)">Favoriten ihrer Freunde</a>
+        <a class="menu-item" onclick="menu(this)">Objekte von Freunden</a>
+        <a class="menu-item spacing-bottom" onclick="menu(this)">Autoren, denen Sie folgen</a>
 
-        <a class="menu-item">Deine Objekte</a>
-        <a class="menu-item active">Abonnierte Objekte</a>
-        <a class="menu-item">Gespielt</a>
+        <a class="menu-item" onclick="menu(this)">Deine Objekte</a>
+        <a class="menu-item" onclick="menu(this)">Abonnierte Objekte</a>
+        <a class="menu-item" onclick="menu(this)">Gespielt</a>
         <hr>
         <a class="tag"><img alt="" height="15" src="icons/x.svg" width="15"> Tag1</a>
         <a class="tag"><img alt="" height="15" src="icons/fullscreen.svg" width="15"> Tag2</a>
