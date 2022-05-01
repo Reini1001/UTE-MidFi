@@ -16,6 +16,7 @@ main {
     border: 2px solid white;
     border-radius: 1rem;
 }
+
 #game div.last-played {
     float: right;
     height: 50%;
@@ -30,6 +31,7 @@ main {
 #tags {
     grid-area: tags;
 }
+
 #tags span {
     background: darkolivegreen;
     padding: 0.1rem 0.5rem;
@@ -41,6 +43,7 @@ main {
     background: transparent;
     padding: 0.5rem;
 }
+
 #menu a {
     display: block;
     width: 100%;
@@ -48,12 +51,15 @@ main {
     padding: 0.1rem 0.3rem;
     border-radius: 0.2rem;
 }
+
 #menu a.spacing-bottom {
     margin-bottom: 0.6rem;
 }
+
 #menu a.active {
     background: hsla(220, 50%, 50%, 0.8);
 }
+
 #menu hr {
     border: 0;
     border-bottom: 0.15rem dotted white;
@@ -63,6 +69,7 @@ main {
 #ws-list {
     grid-area: ws-list;
 }
+
 #ws-list div.ws-item {
     display: flex;
     width: 100%;
@@ -71,10 +78,12 @@ main {
     background: hsla(0, 0%, 100%, 0.1);
     border-radius: 0.5rem;
 }
+
 #ws-list div.ws-item h3 {
     width: 25%;
     padding: 0.5rem;
 }
+
 #ws-list div.ws-item div {
     width: 70%;
     padding: 0.5rem;
