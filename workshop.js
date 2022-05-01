@@ -35,6 +35,30 @@ let ws = [
 		beschreibung: "Beschreibung",
 		abonniert: true
 	},
+	{
+		spiel: "Zeitalter der Imperien II (2013)",
+		name: "Objekt 7",
+		beschreibung: "Beschreibung",
+		abonniert: false
+	},
+	{
+		spiel: "Zeitalter der Imperien II (2013)",
+		name: "Objekt 8",
+		beschreibung: "Beschreibung",
+		abonniert: true
+	},
+	{
+		spiel: "Zeitalter der Imperien II (2013)",
+		name: "Objekt 9",
+		beschreibung: "Beschreibung",
+		abonniert: false
+	},
+	{
+		spiel: "Zeitalter der Imperien II (2013)",
+		name: "Objekt 10",
+		beschreibung: "Beschreibung",
+		abonniert: true
+	},
 ]
 
 function game_load() {

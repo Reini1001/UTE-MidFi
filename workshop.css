@@ -23,7 +23,8 @@ main {
     margin: 0.5rem;
     text-align: center;
     padding: 0.2rem;
-    background: darkblue;
+    background: hsla(0, 0%, 0%, 0.2);
+    border-radius: 0.2rem;
 }
 
 #tags {
@@ -32,6 +33,7 @@ main {
 #tags span {
     background: darkolivegreen;
     padding: 0.1rem 0.5rem;
+    border-radius: 0.2rem;
 }
 
 #menu {
@@ -39,17 +41,18 @@ main {
     background: transparent;
     padding: 0.5rem;
 }
-#menu > a {
+#menu a {
     display: block;
     width: 100%;
     font-size: 1.2rem;
     padding: 0.1rem 0.3rem;
+    border-radius: 0.2rem;
 }
 #menu a.spacing-bottom {
     margin-bottom: 0.6rem;
 }
 #menu a.active {
-    background: darkslateblue;
+    background: hsla(220, 50%, 50%, 0.8);
 }
 #menu hr {
     border: 0;
@@ -65,7 +68,7 @@ main {
     width: 100%;
     aspect-ratio: 4/1;
     margin-bottom: 0.5rem;
-    background: darkslateblue;
+    background: hsla(0, 0%, 100%, 0.1);
     border-radius: 0.5rem;
 }
 #ws-list div.ws-item h3 {
@@ -73,6 +76,6 @@ main {
     padding: 0.5rem;
 }
 #ws-list div.ws-item div {
-    width: 75%;
+    width: 70%;
     padding: 0.5rem;
 }
