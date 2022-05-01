@@ -106,3 +106,38 @@ main {
     background-color: #21252c;
     border-radius: 25%;
 }
+
+#your-friends::after {
+    content: "20";
+    float: right;
+}
+
+#open-invites::after {
+    content: attr(invites);
+    float: right;
+}
+
+#blocked::after {
+    content: "12";
+    float: right;
+}
+
+#followed::after {
+    content: "3";
+    float: right;
+}
+
+#groups::after {
+    content: "7";
+    float: right;
+}
+
+#ginvites::after {
+    content: "2";
+    float: right;
+}
+
+#gfollowed::after {
+    content: "13";
+    float: right;
+}

@@ -7,6 +7,7 @@
     <link href="freunde.css" rel="stylesheet">
     <link href="custom-radio.css" rel="stylesheet">
     <link href="deine-freunde.css" rel="stylesheet">
+    <script src="freunde-logic.js"></script>
 </head>
 <body>
 <header>
@@ -64,20 +65,20 @@
             </div>
             <div id="friends-users">
                 <p class="friends-header">NUTZER</p>
-                <p class="active"><a href="#">Deine Freunde</a></p>
+                <p class="active" id="your-friends"><a href="#">Deine Freunde</a></p>
                 <p><a href="freunde-add.html">Freund Hinzufügen</a></p>
-                <p><a>Offene Einladungen</a></p>
+                <p id="open-invites"><a>Offene Einladungen</a></p>
                 <p><a>Zuletzt gespielt mit</a></p>
-                <p><a>Blockierte Nutzer</a></p>
-                <p><a>Gefolgte Nutzer</a></p>
+                <p id="blocked"><a>Blockierte Nutzer</a></p>
+                <p id="followed"><a>Gefolgte Nutzer</a></p>
             </div>
             <div id="friends-groups">
                 <p class="friends-header">GRUPPEN</p>
-                <p><a>Deine Gruppen</a></p>
-                <p><a>Offene Einladungen</a></p>
+                <p id="groups"><a>Deine Gruppen</a></p>
+                <p id="ginvites"><a>Offene Einladungen</a></p>
                 <p><a>Gruppe Beitreten</a></p>
                 <p><a>Grupper Erstellen</a></p>
-                <p><a>Gefolgte gruppen</a></p>
+                <p id="gfollowed"><a>Gefolgte gruppen</a></p>
             </div>
             <div id="friends-profile">
                 <p><a id="username-copy">User#1337</a></p>
@@ -85,9 +86,9 @@
             </div>
         </div>
         <div id="friends-content">
-            <p>Freunde</p>
+            <p>Freunde (20)</p>
             <div class="friends-friends" id="friends-ingame">
-                <p>Im Spiel</p>
+                <p>Im Spiel (5)</p>
                 <div class="friends-friends-grid">
                     <div class="friend-container">
                         <img src="icons/profilePic.svg">
@@ -127,7 +128,7 @@
                 </div>
             </div>
             <div class="friends-friends" id="friends-online">
-                <p>Online</p>
+                <p>Online (9)</p>
                 <div class="friends-friends-grid">
                     <div class="friend-container">
                         <img src="icons/profilePic.svg">
@@ -195,7 +196,7 @@
                 </div>
             </div>
             <div class="friends-friends" id="friends-offline">
-                <p>Offline</p>
+                <p>Offline (6)</p>
                 <div class="friends-friends-grid">
                     <div class="friend-container">
                         <img src="icons/profilePic.svg">

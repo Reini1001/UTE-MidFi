@@ -65,20 +65,20 @@
             </div>
             <div id="friends-users">
                 <p class="friends-header">NUTZER</p>
-                <p><a href="freunde.html">Deine Freunde</a></p>
+                <p><a href="freunde.html" id="your-friends">Deine Freunde</a></p>
                 <p class="active"><a href="#">Freund Hinzufügen</a></p>
-                <p><a>Offene Einladungen</a></p>
+                <p id="open-invites"><a>Offene Einladungen</a></p>
                 <p><a>Zuletzt gespielt mit</a></p>
-                <p><a>Blockierte Nutzer</a></p>
-                <p><a>Gefolgte Nutzer</a></p>
+                <p id="blocked"><a>Blockierte Nutzer</a></p>
+                <p id="followed"><a>Gefolgte Nutzer</a></p>
             </div>
             <div id="friends-groups">
                 <p class="friends-header">GRUPPEN</p>
-                <p><a>Deine Gruppen</a></p>
-                <p><a>Offene Einladungen</a></p>
+                <p id="groups"><a>Deine Gruppen</a></p>
+                <p id="ginvites"><a>Offene Einladungen</a></p>
                 <p><a>Gruppe Beitreten</a></p>
                 <p><a>Grupper Erstellen</a></p>
-                <p><a>Gefolgte gruppen</a></p>
+                <p id="gfollowed"><a>Gefolgte gruppen</a></p>
             </div>
             <div id="friends-profile">
                 <p><a onclick="" id="username-copy">User#1337</a></p>
@@ -109,7 +109,41 @@
                                 <p></p>
                             </div>
                             <button id="addFriendButton" onclick="toggleAddFriend()">Anfrage Senden</button>
+                            <div id="miniProfile">
+                                <p>Beispielstadt, Deutschland</p>
+                                <p>Hallo, mein Name ist BeispielName und dieser Text ist meine Bio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eget accumsan velit. In hac habitasse platea dictumst. Nunc id laoreet erat. Nunc ac varius augue. In ullamcorper dignissim consequat. Nunc ligula purus, consequat at accumsan sit amet, volutpat ac ex. Quisque accumsan bibendum elit, sed pellentesque nisi luctus quis. In id sem eros.</p>
+                                <p>Kürzliche Aktivitäten</p>
+                                <div id="recent-activity">
+                                    <div class="game-container">
+                                        <img src="icons/profilePic.svg">
+                                        <div class="game-text">
+                                            <p>Gegenschlag: Globale Offensive</p>
+                                            <p>37h in the letzten zwei Wochen, 731h gesamt</p>
+                                        </div>
+                                        <div class="achuvements">
+                                            <div class="achuvement-container">
+                                                <div id="achuvement1"></div>
+                                            </div>
+                                            <p>132 von 167 Errungenschaften freigeschaltet</p>
+                                        </div>
+                                    </div>
+                                    <div class="game-container">
+                                        <img src="icons/profilePic.svg">
+                                        <div class="game-text">
+                                            <p>Rounds</p>
+                                            <p>2.5h in the letzten zwei Wochen, 43h gesamt</p>
+                                        </div>
+                                        <div class="achuvements">
+                                            <div class="achuvement-container">
+                                                <div id="achuvement2"></div>
+                                            </div>
+                                            <p>15 von 73 Errungenschaften freigeschaltet</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
+
                     </div>
                 </div>
          </div>
