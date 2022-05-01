@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>User: Freunde</title>
+    <link href="header-footer-style.css" rel="stylesheet">
+    <link href="freunde.css" rel="stylesheet">
+    <link href="custom-radio.css" rel="stylesheet">
+    <link href="neuer-freund.css" rel="stylesheet">
+    <script src="freunde-logic.js"></script>
+</head>
+<body>
+<header>
+    <div id="top-bar">
+        <!--Einstellungen-->
+        <span id="top-bar-left">
+            <a>Dampf</a>
+            <a>Ansicht</a>
+            <a href="#">Freunde</a>
+            <a>Spiele</a>
+            <a>Hilfe</a>
+        </span>
+        <!--Nutzer-->
+        <span id="top-bar-right">
+            <a class="icon notification"><img alt="" height="16" src="icons/announcement.svg" width="16"></a>
+            <a class="icon notification"><img alt="" height="16" src="icons/notifiction.svg" width="16"></a>
+            <a id="user"><img alt="" height="20" src="icons/profilePic.svg" width="20"><span>User</span><img src="icons/dropdown.svg" width="20" height="20" alt=""> </a>
+            <a class="icon"><img alt="" height="16" src="icons/-.svg" width="16"></a>
+            <a class="icon"><img alt="" height="16" src="icons/fullscreen.svg" width="16"></a>
+            <a class="icon"><img alt="" height="16" src="icons/x.svg" width="16"></a>
+        </span>
+    </div>
+    <!--Nav-->
+    <nav class="uppercase">
+        <a><-</a>
+        <a>-></a>
+        <a>Shop</a>
+        <a>Bibliothek</a>
+        <a>Markt</a>
+        <a href="#">Workshop</a>
+        <a class="active">User</a>
+    </nav>
+</header>
+<main>
+    <div id="friends-main">
+        <div id="friends-sidebar">
+            <div id="friends-status">
+                <p class="friends-header">STATUS</p>
+                <label class="radio-container">Online
+                    <input type="radio" checked="checked" name="status" id="online" value="online">
+                    <span class="custom-radio"></span>
+                </label>
+                <label class="radio-container">Abwesend
+                    <input type="radio" name="status" id="abwesend" value="abwesend">
+                    <span class="custom-radio"></span>
+                </label>
+                <label class="radio-container">Unsichtbar
+                    <input type="radio" name="status" id="unsichtbar" value="unsichtbar">
+                    <span class="custom-radio"></span>
+                </label>
+                <label class="radio-container">Offline
+                    <input type="radio" name="status" id="offline" value="offline">
+                    <span class="custom-radio"></span>
+                </label>
+            </div>
+            <div id="friends-users">
+                <p class="friends-header">NUTZER</p>
+                <p><a href="freunde.html" id="your-friends">Deine Freunde</a></p>
+                <p class="active"><a href="#">Freund Hinzufügen</a></p>
+                <p id="open-invites"><a>Offene Einladungen</a></p>
+                <p><a>Zuletzt gespielt mit</a></p>
+                <p id="blocked"><a>Blockierte Nutzer</a></p>
+                <p id="followed"><a>Gefolgte Nutzer</a></p>
+            </div>
+            <div id="friends-groups">
+                <p class="friends-header">GRUPPEN</p>
+                <p id="groups"><a>Deine Gruppen</a></p>
+                <p id="ginvites"><a>Offene Einladungen</a></p>
+                <p><a>Gruppe Beitreten</a></p>
+                <p><a>Grupper Erstellen</a></p>
+                <p id="gfollowed"><a>Gefolgte gruppen</a></p>
+            </div>
+            <div id="friends-profile">
+                <p><a onclick="" id="username-copy">User#1337</a></p>
+                <img src="icons/profilePic.svg" width="50%">
+            </div>
+        </div>
+        <div id="friends-content">
+            <p>Freund Hinzufügen</p>
+                <div id="friends-friendlink-container">
+                    <p class="friends-helptext">Senden Sie eine Schnelleinladung</p>
+                    <div id="friends-friendlink">
+                        <p>https://d.ampf/invite/7gfr4aJ</p>
+                        <button id="friends-friendlink-copybutton" onclick="">Kopieren</button>
+                    </div>
+                </div>
+                <div id="friends-friendcode-container">
+                    <p class="friends-helptext">Geben Sie den Namen und Code des Nutzers ein</p>
+                    <div id="inputcountainer">
+                        <input type="text" id="friends-friendcode" placeholder="BeispielName#1234" value="">
+                        <button id="search" onclick="searchFriend()">Suchen</button>
+                    </div>
+                    <p id="infobox"></p>
+                    <div id="friends-found-friend" class="invisible">
+                        <div class="friend-found-container">
+                            <img src="icons/profilePic.svg">
+                            <div class="friend-found-text">
+                                <p>BeispielName</p>
+                                <p></p>
+                            </div>
+                            <button id="addFriendButton" onclick="toggleAddFriend()">Anfrage Senden</button>
+                            <div id="miniProfile">
+                                <p>Beispielstadt, Deutschland</p>
+                                <p>Hallo, mein Name ist BeispielName und dieser Text ist meine Bio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eget accumsan velit. In hac habitasse platea dictumst. Nunc id laoreet erat. Nunc ac varius augue. In ullamcorper dignissim consequat. Nunc ligula purus, consequat at accumsan sit amet, volutpat ac ex. Quisque accumsan bibendum elit, sed pellentesque nisi luctus quis. In id sem eros.</p>
+                                <p>Kürzliche Aktivitäten</p>
+                                <div id="recent-activity">
+                                    <div class="game-container">
+                                        <img src="icons/profilePic.svg">
+                                        <div class="game-text">
+                                            <p>Gegenschlag: Globale Offensive</p>
+                                            <p>37h in the letzten zwei Wochen, 731h gesamt</p>
+                                        </div>
+                                        <div class="achuvements">
+                                            <div class="achuvement-container">
+                                                <div id="achuvement1"></div>
+                                            </div>
+                                            <p>132 von 167 Errungenschaften freigeschaltet</p>
+                                        </div>
+                                    </div>
+                                    <div class="game-container">
+                                        <img src="icons/profilePic.svg">
+                                        <div class="game-text">
+                                            <p>Rounds</p>
+                                            <p>2.5h in the letzten zwei Wochen, 43h gesamt</p>
+                                        </div>
+                                        <div class="achuvements">
+                                            <div class="achuvement-container">
+                                                <div id="achuvement2"></div>
+                                            </div>
+                                            <p>15 von 73 Errungenschaften freigeschaltet</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+         </div>
+    </div>
+</main>
+<footer>
+    <a class="uppercase" id="addGame">
+        <img alt="" height="20" src="icons/add.svg" width="20">
+        <span class="hover">Spiel hinzufügen</span>
+    </a>
+    <a id="downloads">
+        <span class="uppercase hover">Downloads</span>
+        <span class="dimgray">Verwalten</span>
+    </a>
+    <a class="uppercase" id="chat">
+        <span class="hover">Freunde <br>& Chat</span>
+        <img alt="" height="30" src="icons/chat.svg" width="30">
+    </a>
+</footer>
+</body>
+</html>

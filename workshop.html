@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Workshop</title>
+    <link href="header-footer-style.css" rel="stylesheet">
+    <link href="workshop.css" rel="stylesheet">
+    <script src="workshop.js"></script>
+</head>
+<body onload="game_load()">
+<header>
+    <div id="top-bar">
+        <!--Einstellungen-->
+        <span id="top-bar-left">
+            <a>Dampf</a>
+            <a>Ansicht</a>
+            <a href="#">Freunde</a>
+            <a>Spiele</a>
+            <a>Hilfe</a>
+        </span>
+        <!--Nutzer-->
+        <span id="top-bar-right">
+            <a class="icon notification"><img alt="" height="16" src="icons/announcement.svg" width="16"></a>
+            <a class="icon notification"><img alt="" height="16" src="icons/notifiction.svg" width="16"></a>
+            <a id="user"><img alt="" height="20" src="icons/profilePic.svg" width="20"><span>User</span><img src="icons/dropdown.svg" width="20" height="20" alt=""> </a>
+            <a class="icon"><img alt="" height="16" src="icons/-.svg" width="16"></a>
+            <a class="icon"><img alt="" height="16" src="icons/fullscreen.svg" width="16"></a>
+            <a class="icon"><img alt="" height="16" src="icons/x.svg" width="16"></a>
+        </span>
+    </div>
+    <!--Nav-->
+    <nav class="uppercase">
+        <a><-</a>
+        <a>-></a>
+        <a>Shop</a>
+        <a href="bibliothek.html">Bibliothek</a>
+        <a>Markt</a>
+        <a class="active">Workshop</a>
+        <a>User</a>
+    </nav>
+</header>
+<main>
+    <div id="game">
+
+    </div>
+    <div id="tags">
+        <span>Tag1 <img alt="" width="10" src="icons/x.svg" height="10"></span>
+    </div>
+    <div id="ws-list">
+
+    </div>
+    <div id="menu">
+        <a class="menu-item" onclick="menu(this)">Offizielle Inhalte</a>
+        <a class="menu-item spacing-bottom" onclick="menu(this)">Ihre Liste</a>
+
+        <a class="menu-item" onclick="menu(this)">Ihre Favoriten</a>
+        <a class="menu-item" onclick="menu(this)">Favoriten ihrer Freunde</a>
+        <a class="menu-item" onclick="menu(this)">Objekte von Freunden</a>
+        <a class="menu-item spacing-bottom" onclick="menu(this)">Autoren, denen Sie folgen</a>
+
+        <a class="menu-item" onclick="menu(this)">Deine Objekte</a>
+        <a class="menu-item" onclick="menu(this)">Abonnierte Objekte</a>
+        <a class="menu-item" onclick="menu(this)">Gespielt</a>
+        <hr>
+        <a class="tag"><img alt="" height="15" src="icons/x.svg" width="15"> Tag1</a>
+        <a class="tag"><img alt="" height="15" src="icons/fullscreen.svg" width="15"> Tag2</a>
+        <a class="tag"><img alt="" height="15" src="icons/fullscreen.svg" width="15"> Tag3</a>
+    </div>
+</main>
+<footer>
+    <a class="uppercase" id="addGame">
+        <img alt="" height="20" src="icons/add.svg" width="20">
+        <span class="hover">Spiel hinzufügen</span>
+    </a>
+    <a id="downloads">
+        <span class="uppercase hover">Downloads</span>
+        <span class="dimgray">Verwalten</span>
+    </a>
+    <a class="uppercase" id="chat">
+        <span class="hover">Freunde <br>& Chat</span>
+        <img alt="" height="30" src="icons/chat.svg" width="30">
+    </a>
+</footer>
+</body>
+</html>

@@ -1,0 +1,143 @@
+main {
+    background: linear-gradient(42deg,
+            rgba(255,255,255,0),
+            rgba(255,255,255,0),
+            rgba(255,255,255,0.02),
+            rgba(255,255,255,0.01),
+            rgba(255,255,255,0),
+            rgba(255,255,255,0.01),
+            rgba(255,255,255,0),
+            rgba(255,255,255,0.01),
+            rgba(255,255,255,0),
+            rgba(255,255,255,0.01),
+            rgba(255,255,255,0.01),
+            rgba(255,255,255,0.01),
+            rgba(255,255,255,0),
+            rgba(255,255,255,0),
+            rgba(255,255,255,0),
+            rgba(255,255,255,0.01),
+            rgba(255,255,255,0),
+            rgba(255,255,255,0.01),
+            rgba(255,255,255,0),
+            rgba(255,255,255,0.01),
+            rgba(255,255,255,0),
+            rgba(255,255,255,0.02),
+            rgba(255,255,255,0.01),
+            rgba(255,255,255,0)
+        ),
+        radial-gradient(#1d5267, #18445d, #1a2737);
+
+    height: 100%;
+    width: 100%;
+    font-size: 2vh;
+}
+
+#friends-main {
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+    column-gap: 0.3em;
+
+    width: 90vw;
+    margin: 3vh auto auto;
+}
+
+#friends-main > div {
+    background-color: rgba(33,37,44,0.4);
+}
+
+#friends-sidebar {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 0.3em;
+    font-size: 0.8em;
+    color: white;
+}
+
+#friends-sidebar > div:nth-child(n+2) {
+    border-top: solid white 1px;
+}
+
+#friends-sidebar > div > p > a {
+    text-decoration: none;
+}
+
+#friends-content {
+    overflow: auto;
+}
+
+#friends-content > p {
+    font-size: 2em;
+    padding-left: 0.4em;
+    padding-top: 0.1em;
+    margin: 0.2em;
+    background-color: rgba(1, 94, 128, 0.9);
+}
+
+.friends-header {
+    font-size: 1.2em;
+    margin-left: 0.2em;
+    margin-top: 0.2em;
+}
+
+#friends-sidebar > div:nth-child(n+2) {
+    padding-top: 0.5em;
+}
+
+#friends-sidebar > div {
+    padding-bottom: 0.5em;
+}
+
+#friends-users > p:nth-child(n+2), #friends-groups > p:nth-child(n+2) {
+    padding: 0.25em 0 0.25em 1em;
+}
+
+#friends-users > p.active {
+    background-color: rgba(255,255,255,0.1);
+}
+
+#friends-profile > p {
+    font-size: 3em;
+    text-align: center;
+}
+
+#friends-profile > img {
+    display: block;
+    margin: 1em auto auto;
+    background-color: #21252c;
+    border-radius: 25%;
+}
+
+#your-friends::after {
+    content: "20";
+    float: right;
+}
+
+#open-invites::after {
+    content: attr(invites);
+    float: right;
+}
+
+#blocked::after {
+    content: "12";
+    float: right;
+}
+
+#followed::after {
+    content: "3";
+    float: right;
+}
+
+#groups::after {
+    content: "7";
+    float: right;
+}
+
+#ginvites::after {
+    content: "2";
+    float: right;
+}
+
+#gfollowed::after {
+    content: "13";
+    float: right;
+}
