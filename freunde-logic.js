@@ -10,8 +10,8 @@ function searchFriend() {
         outputField.innerText = "Bitte geben Sie den Namen und die Zahlen vom Nutzer im Format 'Name#XXXX' an."
         friend.classList.add("invisible");
         return;
-    } else if (inputField !== "BeispielName#1234") {
-        outputField.innerText = "Der Angegebene Nutzer existiert nicht. (In diesem Prototypen ist nur 'BeispielName#1234' verfügbar)"
+    } else if (inputField !== "reini1001#0420") {
+        outputField.innerText = "Der Angegebene Nutzer existiert nicht."
         friend.classList.add("invisible");
         return;
     }
